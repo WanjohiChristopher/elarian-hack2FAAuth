@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  elarian:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: 'node index.js'
+    volumes:
+      - .:/app
